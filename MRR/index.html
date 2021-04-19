@@ -1,0 +1,676 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>MakeIt Ready Resources</title>
+	<link rel="shortcut icon" href="images/mrr1.png" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	 <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="fvcon.ico" type="ico">
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/isotope.js"></script>
+<script type="text/javascript" src="js/imagesloaded.min.js"></script>
+<script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+	</head>
+	<body>
+
+	<style>
+	
+	.dropdown-menu>li>a {
+		color:#3f85c1;
+	}
+	.dropdown-menu>li>a:hover {
+		color:#3f85c1;
+	}
+	.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+     color: #f18a2a; 
+    background-color: transparent;
+}
+.testimonial-p
+{
+	font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 300;
+	color:white;
+}
+a:hover
+{
+text-decoration:none;
+}
+#facebook:hover
+{
+text-decoration:none;
+}
+#twitter:hover
+{
+text-decoration:none;
+}
+#youtube:hover
+{
+text-decoration:none;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #3d81be;
+	background-color: #8be6160d;
+    border-bottom: 2px solid rgb(238, 233, 225);
+	
+	
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d;
+	text-transform: uppercase;
+	font-size:13px;
+	font-weight: 700;
+    
+}
+h1,h2,h3,h4,h5,h6,span,p,ul,li,a
+{
+text-decoration: none;font-family: "Arial", Calibri, sans-serif;
+ color: #5c5959;
+}
+footer
+{
+	background:#124665;
+	padding:20px;
+}
+.footer_p2
+{
+	text-align: center;
+    font-size: 20px;
+}
+footer .footer_menu li
+{
+	font-size: 16px;
+    line-height: 30px;
+	display: inline;
+    border-right: 2px solid #524e4e;
+    padding: 8px;
+	text-transform: uppercase;
+}
+footer .footer_social li
+{
+	font-size: 16px;
+    line-height: 30px;
+	display: inline;
+	padding: 8px;
+	
+}
+footer .footer_menu li .footer_a
+{
+color:rgb(255, 255, 255);
+}
+.fa
+{
+	font-size: 57px;
+}
+	</style>
+	<style>
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}  
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+  border-radius: 15px;
+  text-align: center;
+}
+#boxes #dialog {
+  width:450px; 
+  height:auto;
+  padding:10px;
+  background-color:#380ece;
+  font-family: 'Segoe UI Light', sans-serif;
+  font-size: 15pt;
+}
+.maintext{
+	text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  text-decoration: none;
+}
+body{
+  background: url('bg.jpg');
+  background-color: #ffffff;
+ 
+}
+#lorem{
+	font-family: "Segoe UI", sans-serif;
+	font-size: 12pt;
+  text-align: left;
+}
+#popupfoot{
+	font-family: "Segoe UI", sans-serif;
+	font-size: 16pt;
+  padding: 10px 20px;
+}
+#popupfoot a{
+	text-decoration: none;
+}
+.agree:hover{
+  background-color: #fdfbfb;
+}
+.popupoption:hover{
+	background-color:#e3f0e5;
+	color: green;
+}
+.popupoption2:hover{
+	
+	color: red;
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
+<script src="main.js"></script>
+<script type="text/javascript"></script>
+<script>
+$(document).ready(function() {	
+
+		var id = '#dialog';
+	
+		//Get the screen height and width
+		var maskHeight = $(document).height();
+		var maskWidth = $(window).width();
+	
+		//Set heigth and width to mask to fill up the whole screen
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		
+		//transition effect		
+		$('#mask').fadeIn(500);	
+		$('#mask').fadeTo("slow",0.9);	
+	
+		//Get the window height and width
+		var winH = $(window).height();
+		var winW = $(window).width();
+              
+		//Set the popup window to center
+		$(id).css('top',  winH/2-$(id).height()/2);
+		$(id).css('left', winW/2-$(id).width()/2);
+	
+		//transition effect
+		$(id).fadeIn(2000); 	
+	
+	//if close button is clicked
+	$('.window .close').click(function (e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		
+		$('#mask').hide();
+		$('.window').hide();
+	});		
+	
+	//if mask is clicked
+	$('#mask').click(function () {
+		$(this).hide();
+		$('.window').hide();
+	});		
+	
+});
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+	<header >		
+		<nav class="navbar navbar-inverse navbar-default navbar-fixed-top top-nav-collapse" role="banner"  style="background-color:white;border:0px solid" >
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span> 
+			  </button>
+			  <a href="index.html"><img src="images/mrr1.png" alt="New York"style="padding-top:2px;" width="18%" height="18%" ></a>
+			  
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav" style="float:right;padding: 13px;">
+				<li class="active"><a href="index.html" class="navbar_a">Home</a></li>
+				<li><a href="about.html" class="navbar_a">About Us</a></li>
+				<li class="dropdown"><a href="#" class="navbar_a  dropdown-toggle" type="button" data-toggle="dropdown">Services  <span class="caret"></span></a>
+				<ul class="dropdown-menu"> 
+					<li><a href="technology.html"><i class="fa fa-angle-right " style="color: orange; font-size: 24px; font-weight: bold;"> </i> Courses</a></li>
+					<li><a href="service2.html"><i class="fa fa-angle-right " style="color: orange; font-size: 24px; font-weight: bold;"> </i> Training</a></li>
+					<li><a href="service3.html"><i class="fa fa-angle-right " style="color: orange; font-size: 24px; font-weight: bold;"> </i> Placements</a></li>
+					<li><a href="service4.html"> <i class="fa fa-angle-right " style="color: orange; font-size: 24px; font-weight: bold;"> </i> PayRoll</a></li>
+				  </ul>
+				  </li> 
+				<li><a href="career.html" class="navbar_a">Career </a></li> 
+				<li><a href="contact.html" class="navbar_a">Contact Us</a></li>
+			  </ul>
+		  </div>
+		  </div>
+		</nav>	
+		</header>
+		<!--Section sytart -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:79px;position:relative;">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+	 <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" style="border:6px solid #f3f5f7;">
+    <div class="item active">
+      <img src="images/sli4.png" alt="Los Angeles" style="width:100%; min-height:540px;max-height:540px;">
+	  <div class="carousel-caption caption01  wow   slideInLeft animated "   >
+         <p class="wow fadeInDown  animated">Creative Ideas for Dynamic Business</p>
+        </div>
+		<div class="carousel-caption caption01 wow   slideInUp animated " style="top: 268px; left: 276px;">
+         <p class="wow fadeInDown  animated">Unique Business Solutions</p>
+        </div>
+    </div>
+	 <div class="item">
+      <img src="images/sli1.png" alt="Los Angeles" style="width:100%; min-height:540px;max-height:540px;">
+	  <div class="carousel-caption caption01  wow   slideInLeft animated "   >
+         <p class="wow fadeInDown  animated">Unique Business Solutions</p>
+        </div>
+		<div class="carousel-caption caption01 wow   slideInUp animated " style="top: 268px; left: 276px;">
+         <p class="wow fadeInDown  animated">Precise and Impartial Approach</p>
+        </div>
+    </div>
+
+    <div class="item">
+      <img src="images/sli2.png" alt="Chicago" style="width:100%; max-height:540px;min-height:540px;">
+	  <div class="carousel-caption caption01  wow   slideInLeft animated "   >
+         <p class="wow fadeInDown  animated">Precise and Impartial Approach</p>
+        </div>
+		<div class="carousel-caption caption01 wow   slideInUp animated " style="top: 268px; left: 276px;">
+         <p class="wow fadeInDown  animated">Imagination is our power</p>
+        </div>
+    </div>
+
+    <div class="item">
+      <img src="images/sli3.png" alt="New York" style="width:100%; max-height:540px;min-height:540px;">
+	  <div class="carousel-caption caption01  wow   slideInLeft animated "   >
+         <p class="wow fadeInDown  animated">Imagination is our power</p>
+        </div>
+		<div class="carousel-caption caption01 wow   slideInUp animated " style="top: 268px; left: 276px;">
+         <p class="wow fadeInDown  animated">Unique Business Solutions</p>
+        </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls --
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>-->
+</div>
+	<section id="section1" style="">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 section1_div1" >
+					<h2  class="wow fadeInDown  animated">About Us</h2>
+					<hr class="wow fadeInLeft animated" style="border: 1px solid silver; width: 256px;">
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 section1_div2">
+					<p  class="wow fadeInDown  animated p_section1_div3">
+					MakeIt Ready Resources, Bangalore was established in 2020 by a team of core software professionals endeavoring to provide best IT solutions to the industry.
+					<br></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 section1_div1 wow   fadeInDown" >
+					<img src="images/about2.png"  class="img-responsive  img_about">
+				</div>
+				<div class="col-sm-6 section1_div1" style="margin-top:90px;" >
+					<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="index.html">About</a></li>
+					<li><a data-toggle="tab" href="#menu1">Mission</a></li>
+					<li><a data-toggle="tab" href="#menu2">Vision</a></li>
+					</ul>
+
+				  <div class="tab-content section1_div3">
+					<div id="home" class="tab-pane fade in active">
+					  <p class="p_section1_div3 wow fadeInDown animated"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp In the fast-changing world of consulting, you need to work with someone who is willing to listen to your needs, understand your skills, and professionally represent you to the best opportunities available.The key to establishing a long-term relationship will be built on trust and respect for each other. Working together in an open and honest way will be the foundation. We are committed to this foundation and look forward to a long and mutually relationship.</p>
+						<button type="button" class="btn btn-primary" style="float:right;"><a href="about.html" style="color:white;">Read More</a></button>
+					</div>
+					<div id="menu1" class="tab-pane fade">
+					<p class="p_section1_div3 wow fadeInDown animated"> </br>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp In this highly challenging business environment, <b>MakeIt Ready Resources</b> is committed to provide the best of services in the most competitive of prices.  </br> </br></p>
+						<button type="button" class="btn btn-primary" style="float:right;"><a href="about.html" style="color:white;">Read More</a></button>
+					
+					  </div>
+					<div id="menu2" class="tab-pane fade">
+					  <p class="p_section1_div3 wow fadeInDown animated"> </br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp In this highly challenging business environment, <b>MakeIt Ready Resources</b> is committed to provide the best of services in the most competitive of prices. </br> </br> </p>
+						<button type="button" class="btn btn-primary" style="float:right;">
+						<a href="about.html" style="color:white;">Read More</a></button>
+					
+					  </div>
+				   </div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<section id="section2"  style="margin-top:50px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 section2_div1" >
+					<h2  class="wow fadeInDown  animated">Services</h2>
+					<hr class="wow fadeInLeft animated" style="border: 1px solid silver; width: 256px;">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 section2_div2">
+				
+					<p  class="wow fadeInDown  animated p_section2_div2">
+					With a good record of developing, marketing, and supporting its own products, we specialize in software development services in various areas to customers. <b>MakeIt Ready Resources</b> has experience in executing Software projects i.e. full life cycle projects - right through customer requirement analysis to the delivery of a completed product. We have acquired exceptional development skills and capabilities during execution of numerous application development projects.<br><br></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 section2_div3 service1">
+					<div class=" section2_div4_div1 service_div1">
+						<img src="images/services2.png" class="services1" style="margin-left:-40px;">
+						<p class="wow fadeInDown  animated section2_div3_p">Courses</p>
+						<p class="wow fadeInDown  animated section2_div3_p2" > <b>makeit Ready Resources </b>  We are offering popular technical Courses like SIEM, JAVA, Networking, Php, Android, Dot Net, Software Testing & GR Soft Skills<br></p>			
+						<div class="btn01"><button type="button" class="btn btn-primary"><a href="technology.html" style="color:white;">Read More</a></button>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-sm-3 section2_div3 service2">
+					<div class=" section2_div4_div1 service_div2">
+						<img src="images/services1.png" class="services2" style="margin-left:-40px;">
+						<p class="wow fadeInDown  animated section2_div3_p">Training</p>
+						<p class="wow fadeInDown  animated section2_div3_p2" > <b>MakeIt Ready Resources </b>  Our seasoned staff of skilled recruiters and account managers will listen and associate educate you, and do what it takes to find opportunities.</p>			
+						<div class="btn01"><button type="button" class="btn btn-primary"><a href="service2.html" style="color:white;">Read More</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 section2_div3 service3" >
+					<div class=" section2_div4_div1 service_div3">
+						<img src="images/services3.png" class="services3" style="margin-left:-60px;">
+						<p class="wow fadeInDown  animated section2_div3_p">Placements</p>
+						<p class="wow fadeInDown  animated section2_div3_p2"><b>MakeIt Ready Resources </b>  We offer a unique approach to recruitment. Our focus has always been on Entry, middle and senior management talent needs.<br> </p>
+						<div class="btn01"><button type="button" class="btn btn-primary"><a href="service3.html" style="color:white;">Read More</a></button>
+						</div>
+					</div>
+				</div>
+			<div class="col-sm-3 section2_div3 service4" >
+					<div class=" section2_div4_div1 service_div4">
+						<img src="images/services4.png" class="services4" style="margin-left:-40px;">
+						<p class="wow fadeInDown  animated section2_div3_p">Pay Roll</p>
+						<p class="wow fadeInDown  animated section2_div3_p2"><b>MakeIt Ready Resources </b>  We offer a unique approach to recruitment. Our focus has always been on Entry, middle and senior management talent needs.<br> </p>
+						<div class="btn01"><button type="button" class="btn btn-primary"><a href="service4.html" style="color:white;">Read More</a></button>
+						</div>
+					</div>
+				</div>
+		</div>
+		</div>
+	</section>
+	
+	<section style="margin-top:50px;">
+		<div >
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6"><br>
+					<ul class="footer_menu" type="none">
+						<li ><a href="index.html" class="footer_a" >Home</a></li>
+						<li><a href="about.html" class="footer_a">About Us</a></li>
+						<li><a href="service1.html" class="footer_a">Services</a></li> 
+						<li><a href="career.html" class="footer_a">CAReer </a></li> 
+						<li><a href="contact.html" class="footer_a">Contact Us</a></li>
+					</ul>
+					
+				</div>
+				<div class="col-sm-6">
+					<ul class="footer_social" type="none" style="float:right;">
+						<li ><a href="https://www.facebook.com/Job-Zing-236858053708344/" id="facebook" class="footer_a fa fa-facebook-square"style="color:#3B5998;" target="_blank"></a></li>
+						<li><a href="https://in.linkedin.com/company/job-zing" id="linkedin" class="footer_a fa fa-linkedin-square"style="color:#0077B5"  target="_blank"></a></li> 
+						<li><a href="https://www.youtube.com/" id="youtube" class="footer_a fa fa-youtube-square"style="color:#3B5998"  target="_blank"></a></li> 
+						<li><a href="https://twitter.com/?lang=en-in" id="twitter" class="footer_a fa fa-twitter-square"style="color:#0077B5"  target="_blank"></a></li> 
+						
+					</ul>
+					
+				</div>
+			</div>
+			
+			<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<hr/>
+				<p class="footer_p2">All Right Reserved &copy; 2021 |  <a >Raclac Makeit Technologies</a> </p>
+			</div>
+			<div class="col-sm-3"></div>
+			</div>
+		</div>
+	</footer>
+	<!--section ends -->
+	</body>
+	</html>
+	
+	
+
+<style>
+
+.btn01
+{
+    padding: 14px;
+    padding-left: 100px;
+}
+img
+{
+position:relative;
+z-index:-1;
+}
+.logo
+{
+z-index:1;
+}
+.img_about
+{  width: 100%;
+    padding: 35px;
+    z-index: -1;
+    position: relative;
+	}
+.caption01
+{
+	background: #4cb8f7;
+    top: 184px;
+    height: 72px;
+    color: white;
+    width: 476px;
+    border-radius: 3px;
+    left: 94px;
+}
+.caption01>p{
+     color: white;
+    font-size: 27px;
+    padding: 0px;
+	visibility: visible;
+	
+}
+.section1_div1>h2,.section2_div1>h2
+{
+	text-align:center;
+	font-size: 25px;
+    color: #190f72;
+    text-transform: uppercase;
+	font-weight:bolder;
+}
+
+.section1_div2>p
+{
+	text-align:center;
+	font-size:14px;
+	
+}
+.section1_div1
+{
+margin-top:50px;
+}
+.p_section1_div3, .p_section2_div3
+{
+	font-size: 14px;
+    text-align: justify;
+    padding-top:10px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: black;
+    cursor: default;
+    background-color: rgb(255, 255, 255);
+    border: 0px solid #5b85b5;
+    border-bottom-color: transparent;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: rgb(245, 237, 237);
+    cursor: default;
+    background-color: #124665;
+    border: 1px solid #5b85b5;
+    border-bottom-color: transparent;
+}
+.nav-tabs {
+    border-bottom: 1px solid #2b078d;
+}
+.p_section2_div2
+{
+	font-size: 14px;
+    text-align: center;
+}
+.section2_div3
+{
+padding: 35px;
+}
+.section2_div3_p
+{
+	font-size: 16px;
+    color: #2f8aeb;
+    text-transform: uppercase;
+	text-align:center;
+}
+.section2_div3_p2
+{
+	text-align:center;
+}
+.services1,.services2,.services3,.services4
+{
+	padding: 82px;
+    padding-bottom: 13px;
+    padding-top: 13px;
+}
+.section2_div4_div1
+{
+border: 1px solid #3713b9;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".service1").mouseover(function(){
+        $(".service_div1").css("box-shadow", "0px 4px 22px 3px #428bca");
+    });
+    $(".service1").mouseout(function(){
+        $(".service_div1").css("box-shadow", "1px solid #428bca");
+		 $(".service_div1").css("box-shadow", "0px 0px 0px 0px");
+    });
+	 $(".service2").mouseover(function(){
+        $(".service_div2").css("box-shadow", "0px 4px 22px 3px #428bca");
+    });
+    $(".service2").mouseout(function(){
+        $(".service_div2").css("box-shadow", "1px solid #428bca");
+		 $(".service_div2").css("box-shadow", "0px 0px 0px 0px");
+    });
+	 $(".service3").mouseover(function(){
+        $(".service_div3").css("box-shadow", "0px 4px 22px 3px #428bca");
+    });
+    $(".service3").mouseout(function(){
+        $(".service_div3").css("box-shadow", "1px solid #428bca");
+		 $(".service_div3").css("box-shadow", "0px 0px 0px 0px");
+    });
+	$(".service4").mouseover(function(){
+        $(".service_div4").css("box-shadow", "0px 4px 22px 3px #428bca");
+    });
+    $(".service4").mouseout(function(){
+        $(".service_div4").css("box-shadow", "1px solid #428bca");
+		 $(".service_div4").css("box-shadow", "0px 0px 0px 0px");
+    });
+	 $("#facebook").mouseover(function(){
+        $("#facebook").css("color", "white");
+    });
+    $("#facebook").mouseout(function(){
+        $("#facebook").css("color", "gray");
+	
+    });
+	 $("#twitter").mouseover(function(){
+        $("#twitter").css("color", "white");
+    });
+    $("#twitter").mouseout(function(){
+        $("#twitter").css("color", "gray");
+	
+    });
+	$("#youtube").mouseover(function(){
+        $("#youtube").css("color", "white");
+    });
+    $("#youtube").mouseout(function(){
+        $("#youtube").css("color", "gray");
+	
+    });
+	$("#linkedin").mouseover(function(){
+        $("#linkedin").css("color", "white");
+    });
+    $("#linkedin").mouseout(function(){
+        $("#linkedin").css("color", "gray");
+	
+    });
+	
+	
+	$(window).on("scroll", function() {
+ if ($(this).scrollTop() > 70) {
+   $(".navbar-inverse").css("background","#3e84c0a1");
+    $(".navbar_a").css("color","black");
+	
+ }
+ else {
+   $(".navbar-inverse").css("background","#124665");
+    $(".navbar_a").css("color","white");
+	}
+});
+});
+ 
+</script>
+

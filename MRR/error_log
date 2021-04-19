@@ -1,0 +1,15 @@
+[24-Jan-2019 11:03:03 Etc/GMT] PHP Notice:  Undefined index: name in /home/joycaree/public_html/jobzing.in/send.php on line 12
+[24-Jan-2019 11:03:03 Etc/GMT] PHP Notice:  Undefined index: email in /home/joycaree/public_html/jobzing.in/send.php on line 13
+[24-Jan-2019 11:03:03 Etc/GMT] PHP Notice:  Undefined index: telephone in /home/joycaree/public_html/jobzing.in/send.php on line 14
+[24-Jan-2019 11:03:03 Etc/GMT] PHP Notice:  Undefined index: userMsg in /home/joycaree/public_html/jobzing.in/send.php on line 15
+[24-Jan-2019 11:03:03 Etc/GMT] PHP Notice:  Undefined variable: gstr in /home/joycaree/public_html/jobzing.in/send.php on line 153
+[24-Jan-2019 11:03:03 Etc/GMT] PHP Notice:  Undefined index: fileToUpload in /home/joycaree/public_html/jobzing.in/send.php on line 155
+[24-Jan-2019 11:03:03 Etc/GMT] PHP Notice:  Undefined variable: target_dir in /home/joycaree/public_html/jobzing.in/send.php on line 155
+[04-Apr-2019 02:52:01 Etc/GMT] PHP Notice:  Undefined variable: pstr in /home/joycaree/public_html/jobzing.in/send.php on line 134
+[11-Apr-2019 15:35:42 Etc/GMT] PHP Notice:  Undefined variable: pstr in /home/joycaree/public_html/jobzing.in/send.php on line 134
+[14-Apr-2019 00:21:54 Etc/GMT] PHP Notice:  Undefined variable: pstr in /home/joycaree/public_html/jobzing.in/send.php on line 134
+[27-Apr-2019 16:16:58 Etc/GMT] PHP Notice:  Undefined variable: pstr in /home/joycaree/public_html/jobzing.in/send.php on line 134
+[02-May-2019 15:13:00 Etc/GMT] PHP Notice:  Undefined variable: pstr in /home/joycaree/public_html/jobzing.in/send.php on line 134
+[03-May-2019 13:38:38 Etc/GMT] PHP Notice:  Undefined variable: pstr in /home/joycaree/public_html/jobzing.in/send.php on line 134
+[04-May-2019 10:45:04 Etc/GMT] PHP Notice:  Undefined variable: pstr in /home/joycaree/public_html/jobzing.in/send.php on line 134
+[09-May-2019 16:09:08 Etc/GMT] PHP Notice:  Undefined variable: pstr in /home/joycaree/public_html/jobzing.in/send.php on line 134
